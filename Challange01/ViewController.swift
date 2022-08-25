@@ -20,6 +20,10 @@ class ViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         // Load flags from app bundle
+        loadFlags()
+    }
+
+    private func loadFlags() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -39,7 +43,6 @@ class ViewController: UITableViewController {
         print("Small flags: \(smallFlags)")
         print("Big flags: \(bigFlags)")
     }
-
 
 }
 

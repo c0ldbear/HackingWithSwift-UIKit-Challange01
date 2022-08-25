@@ -43,6 +43,22 @@ class ViewController: UITableViewController {
         print("Small flags: \(smallFlags)")
         print("Big flags: \(bigFlags)")
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return smallFlags.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FlagCell", for: indexPath)
+//        cell.textLabel?.largeContentImage = UIImage(named: smallFlags[indexPath.row])
+        let tempFlag = smallFlags[indexPath.row]
+        if let index = tempFlag.range(of: "@")?.lowerBound {
+            let flag = String(tempFlag[..<index])
+            cell.imageView?.image = UIImage(named: flag)
+            cell.textLabel?.text = flag.count < 3 ? flag.uppercased() : flag.capitalized
+        }
+        return cell
+    }
 
 }
 

@@ -58,17 +58,31 @@
         <!--Flag Detail View Controller-->
         <scene sceneID="5vm-24-R1w">
             <objects>
-                <viewController id="nZR-TZ-QNN" customClass="FlagDetailViewController" customModule="Challange01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlagDetail" id="nZR-TZ-QNN" customClass="FlagDetailViewController" customModule="Challange01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mvf-No-ORV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyJ-6j-dbf">
+                                <rect key="frame" x="107" y="235" width="200" height="100"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="m8V-2k-UEZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tyJ-6j-dbf" firstAttribute="centerX" secondItem="m8V-2k-UEZ" secondAttribute="centerX" id="3Xe-Zv-xc4"/>
+                            <constraint firstItem="tyJ-6j-dbf" firstAttribute="width" secondItem="mvf-No-ORV" secondAttribute="height" multiplier="25:112" id="6X2-XP-qFr"/>
+                            <constraint firstItem="tyJ-6j-dbf" firstAttribute="top" secondItem="m8V-2k-UEZ" secondAttribute="top" constant="191" id="9ZO-3L-1bN"/>
+                            <constraint firstItem="tyJ-6j-dbf" firstAttribute="height" secondItem="mvf-No-ORV" secondAttribute="height" multiplier="0.111607" id="RsX-2n-FLN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flagImageView" destination="tyJ-6j-dbf" id="ADb-DQ-xsx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cy9-aE-9yv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="-617"/>
+            <point key="canvasLocation" x="666.66666666666674" y="-617.41071428571422"/>
         </scene>
     </scenes>
     <resources>

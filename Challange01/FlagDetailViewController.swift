@@ -24,9 +24,22 @@ class FlagDetailViewController: UIViewController {
         super.viewDidLoad()
         
         title = flagName
-        flagImageView.layer.borderWidth = 1
-        flagImageView.layer.borderColor = UIColor.lightGray.cgColor
-        flagImageView.image = UIImage(named: selectedFlag!)
+        if let selectedFlag = selectedFlag {
+            flagImageView.image = UIImage(named: selectedFlag)
+            flagImageView.layer.borderWidth = 1
+            flagImageView.layer.borderColor = UIColor.lightGray.cgColor
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        }
+    }
+    
+    @objc func shareTapped(action: UIAlertAction! = nil) {
+        guard let image = flagImageView.image?.jpegData(compressionQuality: 1) else {
+                  print("No flag or flag image found.")
+                  return
+              }
         
+        let vc = UIActivityViewController(activityItems: [image, flagName], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
 }

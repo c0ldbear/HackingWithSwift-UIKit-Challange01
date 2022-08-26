@@ -50,7 +50,6 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FlagCell", for: indexPath)
-//        cell.textLabel?.largeContentImage = UIImage(named: smallFlags[indexPath.row])
         let tempFlag = smallFlags[indexPath.row]
         if let index = tempFlag.range(of: "@")?.lowerBound {
             let flag = String(tempFlag[..<index])

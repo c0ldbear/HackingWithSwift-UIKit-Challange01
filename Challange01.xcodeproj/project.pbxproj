@@ -37,6 +37,7 @@
 		9F84157128B7CE36002BB8BD /* france@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F84155928B7CE36002BB8BD /* france@2x.png */; };
 		9F84157228B7CE36002BB8BD /* us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F84155A28B7CE36002BB8BD /* us@2x.png */; };
 		9F84157328B7CE36002BB8BD /* uk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F84155B28B7CE36002BB8BD /* uk@2x.png */; };
+		9F84157528B89795002BB8BD /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F84157428B89795002BB8BD /* FlagDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		9F84155928B7CE36002BB8BD /* france@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france@2x.png"; sourceTree = "<group>"; };
 		9F84155A28B7CE36002BB8BD /* us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "us@2x.png"; sourceTree = "<group>"; };
 		9F84155B28B7CE36002BB8BD /* uk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uk@2x.png"; sourceTree = "<group>"; };
+		9F84157428B89795002BB8BD /* FlagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				9F84152F28B7C0E0002BB8BD /* AppDelegate.swift */,
 				9F84153128B7C0E0002BB8BD /* SceneDelegate.swift */,
 				9F84153328B7C0E0002BB8BD /* ViewController.swift */,
+				9F84157428B89795002BB8BD /* FlagDetailViewController.swift */,
 				9F84153528B7C0E0002BB8BD /* Main.storyboard */,
 				9F84153828B7C0E4002BB8BD /* Assets.xcassets */,
 				9F84153A28B7C0E4002BB8BD /* LaunchScreen.storyboard */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F84153428B7C0E0002BB8BD /* ViewController.swift in Sources */,
+				9F84157528B89795002BB8BD /* FlagDetailViewController.swift in Sources */,
 				9F84153028B7C0E0002BB8BD /* AppDelegate.swift in Sources */,
 				9F84153228B7C0E0002BB8BD /* SceneDelegate.swift in Sources */,
 			);

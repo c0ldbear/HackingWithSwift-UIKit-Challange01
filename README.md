@@ -1,5 +1,5 @@
 # Challange 01
-The first challange from Hacking With Swift, 100 days of UIKit ().
+The first challange from Hacking With Swift, 100 days of UIKit (https://www.hackingwithswift.com/100).
 
 ## Instructions
 The details of the challange can be found here: https://www.hackingwithswift.com/guide/2/3/challenge
